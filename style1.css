@@ -1,0 +1,107 @@
+/* Style for the header and search bar */
+header {
+    background-color:lightgray;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .search {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 80%;
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Style for the overlay */
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .arrow {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-right: 550px;
+  }
+  
+  .left-arrow {
+    left: 10px;
+    color: blue;
+
+  }
+  
+  .right-arrow {
+    right: 10px;
+    color: brown;
+  }
+  
+  /* Style for the main content */
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style for the pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .page {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .current {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  body {
+    background-image: url('https://img.freepik.com/free-vector/home-movie-background-with-popcorn_1419-1852.jpg?w=740&t=st=1681364236~exp=1681364836~hmac=347ce31491926b5ca45c2a98cb21cf77555951c026e5a1fa784a7ad603d940f6');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }  
+  

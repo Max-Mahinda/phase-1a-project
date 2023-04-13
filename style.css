@@ -1,52 +1,151 @@
-*{
-    box-sizing: border-box;
-  }
-  body{
-    margin: 0;
-    padding: 0;
-    background-color: ivory;
-    text-align: center;
-    
-  }
-  header{    
-    margin-bottom: 20px;
-    height: 100px;
-    padding: 30px 0;
-    background-color: ivory;
-    border-bottom: blanchedalmond;
-    box-shadow: 0 0 10px 5px rgba(0, 0,0, .5);
-  
-  }
-  label{
-    margin-right: 20px;
-    width: 200px;
-    background-color: #fff;
-    height: 30px;
-    outline: none;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif; 
-    color: rgb(44, 233, 186);
-    font-size: 30px;
-    font-style: italic;
-  }
-  select#dog{
-    width: 200px;
-    height: 35px;
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif; 
-    color: rgb(44, 233, 186);
-    font-size: 20px;
-    outline: none;
-  }
-  img{
-   
-    width: 600px;
-    height: 500px;
-    box-shadow: 0 0 10px 10px rgba(0, 0,0, .5);
-    background-color: #eeeeee;
-    border-radius: 10px;  
-  }
-  div{
-    background-color: ivory;
-  padding: 30px 0;
-  }
+html {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  scroll-behavior: smooth;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Oswald", sans serifs;
+}
+
+/* 2. navbar */
+#navbar {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0.7rem;
+  background-color: black;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/* 3. header */
+#header {
+  margin: 0;
+}
+
+#header h1,
+h3 {
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* 4. input elements
+/* Style text input */
+#searchCountry,
+#holidayText {
+  margin-bottom: 4rem;
+  padding: 0.5rem;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#searchCountry:focus,
+#holidayText:focus {
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+
+#getCountry,
+#getHoliday {
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/* 5. main */
+#main {
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#main h2 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#resultBox img {
+  max-width: 150px;
+  border: 1px solid #fff;
+}
+
+#resultBox h3 {
+  padding: 2.5rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #25282a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#resultBox h2 {
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+}
+
+#resultBox strong {
+  color: rgb(255, 37, 37);
+}
+
+#holidayBox {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+#holidayBox h3 {
+  background-color: #25282a;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+#holidayBox strong {
+  color: rgb(255, 37, 37);
+}
+
+/* 6. footer */
+#footer {
+  margin-top: 10rem;
+  text-align: center;
+
+}  
+.search {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 80%;
+  margin-right: 10px;
+}
+
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style for the pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.page {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
